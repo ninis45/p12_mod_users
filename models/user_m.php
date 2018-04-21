@@ -181,7 +181,7 @@ class User_m extends MY_Model
 	 *
 	 * @return object
 	 */
-	public function get_many_by($params = array())
+	public function _get_many_by($params = array())
 	{
 		if ( ! empty($params['active']))
 		{

@@ -109,7 +109,7 @@ class Admin extends Admin_Controller
 			->where_not_in('groups.name', $skip_admin)
 			->limit($pagination['limit'], $pagination['offset']);
 
-		$users = $this->user_m->get_many_by($base_where);
+		$users = $this->user_m->_get_many_by($base_where);
         
         $total_items = $this->user_m->count_by($base_where);
 
